@@ -71,11 +71,11 @@ if __name__ == "__main__":
     crawl(start_url, target_ids, domain)
 
     print("\n✅ Done! Pages containing at least one target ID:")
-    with open("form_urls.txt", "w") as f:
+    with open("urls.txt", "w") as f:
         for url, ids_found in matching_urls.items():
             line = f"{url}"
             print(line)
             f.write(line + "\n")
 
-    print("\n📁 Results saved to form_urls.txt")
+    print("\n📁 Results saved to urls.txt")
 
